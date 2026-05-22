@@ -13,6 +13,8 @@ const JOKES = [
   "Dark mode isn't a phase, mom.",
   "☀️ → ❌",
   "🔦 not included.",
+  "what do you expect.",
+  "No my eyes burning.",
 ];
 
 export default function ThemeToggle() {
