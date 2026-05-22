@@ -20,7 +20,10 @@ export default function Home() {
         </p>
         <div className="header-links">
           <a href="https://github.com/cantwin-ctrl">GitHub</a>
-          <a href="https://t.me/cantwin">Telegram</a>
+          <a href="https://kh.linkedin.com/in/eng-vicheka-27150b410">LinkedIn</a>
+          <a href="https://t.me/Callme_vexshell">Telegram</a>
+          <a href="https://t.me/OmenAndroid">Channel</a>
+          <a href="mailto:rtmny078@gmail.com">Email</a>
         </div>
       </header>
 
@@ -135,8 +138,10 @@ export default function Home() {
         </pre>
         <p>Built with Next.js · Static export on GitHub Pages</p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '0.5rem' }}>
-          <a href="https://github.com/cantwin-ctrl/next-portfolio">Source</a>
           <a href="https://github.com/cantwin-ctrl">GitHub</a>
+          <a href="https://t.me/OmenAndroid">Channel</a>
+          <a href="https://t.me/Callme_vexshell">Telegram</a>
+          <a href="https://github.com/cantwin-ctrl/next-portfolio">Source</a>
         </div>
       </footer>
     </main>
