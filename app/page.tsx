@@ -1,3 +1,6 @@
+import Terminal from "./Terminal";
+import ThemeToggle from "./ThemeToggle";
+
 export default function Home() {
   return (
     <main>
@@ -144,6 +147,9 @@ export default function Home() {
           <a href="https://github.com/cantwin-ctrl/next-portfolio">Source</a>
         </div>
       </footer>
+
+      <Terminal />
+      <ThemeToggle />
     </main>
   );
 }
