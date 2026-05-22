@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VK · Tinkerer & Builder",
-  description: "Electronics student by day, tinkerer by night. ESP32, RF, Linux, embedded systems.",
+  title: "Vk · Tinkerer & Builder",
+  description: "Electronic Engineering student by day, tinkerer by night. ESP32, RF, Linux, embedded systems.",
   openGraph: {
-    title: "VK · Tinkerer & Builder",
+    title: "Vk · Tinkerer & Builder",
     description: "Building things that blink, beep, and occasionally catch fire.",
     type: "website",
   },

@@ -11,9 +11,9 @@ export default function Home() {
   ╚████╔╝  ██║  ██╗
    ╚═══╝   ╚═╝  ╚═╝`}
         </pre>
-        <h1 className="glitch" data-text="jonh">jonh</h1>
+        <h1 className="glitch" data-text="Vk">Vk</h1>
         <p>
-          Electronics student by day, tinkerer by night. Year 3 at Puok General
+          Electronic Engineering student by day, tinkerer by night. Year 3 at Puok General
           &amp; Technical High School, Siem Reap. Building things that blink, beep,
           and occasionally catch fire. Armed with an ESP32, a soldering iron,
           too much coffee, and a deep distrust of closed-source firmware.
@@ -32,7 +32,7 @@ export default function Home() {
         <div className="box">
           <p className="box-title">system.info - bash - 80×24</p>
           <p><span className="prompt">user@host:~$</span> whoami</p>
-          <p>vk — electronics tinkerer, year 3</p>
+          <p>Vk — electronic engineering, year 3</p>
           <p><span className="prompt">user@host:~$</span> uname -a</p>
           <p>Debian 13 trixie · Celeron N4000 · 7.6GB · oh-my-zsh</p>
           <p><span className="prompt">user@host:~$</span> uptime</p>
@@ -133,7 +133,7 @@ export default function Home() {
 │  Powered by caffeine               │
 │  Crafted in vim · Debian 13        │
 │  All bugs reserved                 │
-│  © ${new Date().getFullYear()} vk · Siem Reap, KH       │
+│  © ${new Date().getFullYear()} Vk · Siem Reap, KH       │
 └─────────────────────────────────────┘`}
         </pre>
         <p>Built with Next.js · Static export on GitHub Pages</p>
