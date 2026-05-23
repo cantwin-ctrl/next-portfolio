@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vk · Tinkerer & Builder",
-  description: "Electronic Engineering student by day, tinkerer by night. ESP32, RF, Linux, embedded systems.",
+  title: "Vk · Present Day, Present Time",
+  description: "Electronic Engineering student by day, tinkerer in the Wired by night. ESP32, RF, Linux, embedded systems. Close the world, Open the nExt.",
   openGraph: {
-    title: "Vk · Tinkerer & Builder",
-    description: "Building things that blink, beep, and occasionally catch fire.",
+    title: "Vk · Present Day, Present Time",
+    description: "Building things that blink, beep, and occasionally catch fire. Close the world, Open the nExt.",
     type: "website",
   },
 };
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-green-400 font-mono antialiased min-h-screen">
+      <body>
         {children}
       </body>
     </html>
