@@ -319,5 +319,169 @@ footer pre {
 ::-webkit-scrollbar-thumb { background: var(--wire); }
 ::-webkit-scrollbar-thumb:hover { background: var(--wire-bright); }
 
+/* ── Layer:02 (Red-dominant alt palette) ── */
+body.layer-02 {
+  --bg: #160d0d;
+  --bg-card: #201313;
+  --text: #d8c4c4;
+  --text-dim: #886a6a;
+  --accent-red: #ff4444;
+  --accent-blue: #cc3366;
+  --wire: #381e1e;
+  --wire-bright: #663333;
+  --glow-red: rgba(255, 68, 68, 0.25);
+}
+body.layer-02 a { color: var(--accent-blue); }
+body.layer-02 a:hover { color: var(--accent-red); text-shadow: 0 0 12px var(--glow-red); }
+body.layer-02 .box .prompt { color: var(--accent-blue); }
+body.layer-02 .skill-bar .pct { color: var(--accent-red); }
+body.layer-02 .bar-fill { background: linear-gradient(90deg, var(--accent-red), #883344); }
+body.layer-02 .card:hover { border-color: var(--accent-red); box-shadow: 0 0 20px rgba(255, 68, 68, 0.1), inset 0 0 20px rgba(255, 68, 68, 0.03); }
+body.layer-02 .tag-nr { border-color: rgba(255, 68, 68, 0.2); }
+body.layer-02 .currently li::before { color: var(--accent-red); }
+body.layer-02 .intro-line { text-shadow: 0 0 20px rgba(255, 100, 100, 0.4), 0 0 60px rgba(255, 0, 0, 0.15); }
+body.layer-02 canvas { /* cursor trail red */ }
+
+/* ── Layer Toggle Button ── */
+.layer-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: rgba(13, 13, 22, 0.8);
+  border: 1px solid var(--wire);
+  color: var(--text-dim);
+  font-family: 'Courier New', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.layer-toggle:hover {
+  color: var(--text);
+  border-color: var(--accent-red);
+  box-shadow: 0 0 12px var(--glow-red);
+}
+
+/* ── Power Lines Sway ── */
+@keyframes power-sway {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+}
+.powerlines svg path {
+  animation: power-sway 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* ── Click Ripple ── */
+.click-ripple {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  border: 1px solid rgba(100, 150, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10002;
+}
+body.layer-02 .click-ripple {
+  border-color: rgba(255, 100, 100, 0.5);
+}
+
+/* ── Micro Glitch Overlay ── */
+.micro-glitch {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(90deg, transparent, rgba(200, 200, 255, 0.15), transparent);
+  animation: micro-shift 0.15s ease-out;
+}
+@keyframes micro-shift {
+  0% { transform: translateX(-5px); opacity: 0; }
+  50% { transform: translateX(5px); opacity: 1; }
+  100% { transform: translateX(0); opacity: 0; }
+}
+
+/* ── Now Playing ── */
+.now-playing {
+  margin-top: 1rem;
+}
+.np-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.np-display {
+  border: 1px solid var(--wire);
+  padding: 1.25rem;
+  background: rgba(13, 13, 22, 0.6);
+  min-width: 280px;
+  flex: 1;
+}
+.np-track-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.np-label {
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+}
+.np-value {
+  color: var(--text);
+}
+
+/* Equalizer */
+.np-eq {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 40px;
+  margin: 0.8rem 0;
+  padding: 0 0.2rem;
+}
+.np-eq-bar {
+  flex: 1;
+  background: linear-gradient(0deg, var(--accent-blue), var(--accent-red));
+  transition: height 0.3s ease;
+  min-height: 4px;
+}
+
+.np-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+/* Quote */
+.np-quote {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-left: 1px solid var(--wire);
+}
+.np-quote-text {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .np-container { flex-direction: column; }
+  .np-quote { border-left: none; border-top: 1px solid var(--wire); padding-top: 1rem; }
+}
+
 /* ── Terminal overrides (keep dark theme) ── */
 /* Terminal component is green-on-black by default; we keep that as a contrast element */

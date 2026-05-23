@@ -5,6 +5,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Terminal from "./Terminal";
 import ThemeToggle from "./ThemeToggle";
+import Effects from "./Effects";
+import NowPlaying from "./NowPlaying";
+import LayerToggle from "./LayerToggle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -309,6 +312,10 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Now Playing */}
+        <div className="section-wire" />
+        <NowPlaying />
+
         {/* Currently */}
         <section className="currently anim-section">
           <h2>▸ Currently</h2>
@@ -345,7 +352,9 @@ export default function Home() {
 
         <Terminal />
         <ThemeToggle />
+        <LayerToggle />
       </main>
+      <Effects />
     </>
   );
 }
