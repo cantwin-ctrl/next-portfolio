@@ -148,7 +148,7 @@ export default function ContactForm({ t: _t }: Props) {
               // Signal sent. Acknowledged. (Visual mode)
             </div>
             <div style={{ color: "#6a6a88", fontSize: "0.75rem", marginTop: "0.5rem" }}>
-              // Real contact: <a href="https://t.me/Callme_vexshell">@Callme_vexshell</a> or <a href="mailto:rtmny078@gmail.com">rtmny078@gmail.com</a>
+              // Real contact: <a href="https://t.me/Callme_vexshell">@Callme_vexshell</a>
             </div>
           </div>
         )}

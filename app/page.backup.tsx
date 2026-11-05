@@ -209,8 +209,7 @@ export default function Home() {
             <a href="https://github.com/cantwin-ctrl">GitHub</a>
             <a href="https://kh.linkedin.com/in/eng-vicheka-27150b410">LinkedIn</a>
             <a href="https://t.me/Callme_vexshell">Telegram</a>
-            <a href="https://t.me/OmenAndroid">Channel</a>
-            <a href="mailto:rtmny078@gmail.com">Email</a>
+            <a href="https://t.me/thekairosdev">Channel</a>
           </div>
         </header>
 
@@ -344,7 +343,7 @@ export default function Home() {
           <p>Built with Next.js · GSAP · Static export on GitHub Pages</p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", marginTop: "0.5rem" }}>
             <a href="https://github.com/cantwin-ctrl">GitHub</a>
-            <a href="https://t.me/OmenAndroid">Channel</a>
+            <a href="https://t.me/thekairosdev">Channel</a>
             <a href="https://t.me/Callme_vexshell">Telegram</a>
             <a href="https://github.com/cantwin-ctrl/next-portfolio">Source</a>
           </div>
